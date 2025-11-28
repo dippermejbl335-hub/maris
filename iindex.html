@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <title>Qarzhy Bilim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ... СТИЛЬДЕР ОРЫНДА ҚАЛАДЫ ... */
+        :root {
+            --primary: #3b82f6;
+            --secondary: #eef5ff;
+            --text: #1e293b;
+            --card: #ffffff;
+            --shadow: rgba(0,0,0,0.1);
+            --gradient: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+        }
+        
+        body { margin: 0; font-family: "Inter", sans-serif; background: var(--secondary); color: var(--text); line-height: 1.6; }
+        header { background: var(--card); padding: 20px 40px; box-shadow: 0 4px 20px var(--shadow); position: sticky; top: 0; z-index: 10; }
+        .logo { font-size: 26px; font-weight: 800; color: var(--primary); }
+        .hero { padding: 80px 40px; text-align: center; background: var(--gradient); color: var(--card); }
+        .hero h1 { font-size: 56px; font-weight: 900; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.15); }
+        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; opacity: 0.95; }
+        .hero-visual { margin-top: 40px; padding: 20px 0; animation: fadeIn 1s ease-out; }
+        .scroll-down-arrow { display: inline-block; margin-top: 30px; font-size: 30px; color: var(--card); animation: bounce 2s infinite; }
+        .section { padding: 60px 40px; }
+        .section h2 { text-align: center; font-size: 36px; margin-bottom: 50px; color: var(--primary); }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card { background: var(--card); padding: 30px; border-radius: 20px; box-shadow: 0 8px 25px var(--shadow); transition: 0.4s ease-in-out; border-left: 5px solid var(--primary); }
+        .card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+        .card h3 { color: var(--primary); margin-top: 15px; margin-bottom: 15px; font-size: 22px; }
+        .card p { font-size: 16px; opacity: 0.9; }
+        .card-icon { font-size: 40px; color: var(--primary); margin-bottom: 10px; opacity: 0.8; transition: 0.3s; }
+        .card:hover .card-icon { opacity: 1; transform: scale(1.1) rotate(5deg); }
+        footer { text-align: center; padding: 30px; background: var(--text); color: var(--secondary); font-size: 14px; }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-15px); } 60% { transform: translateY(-7px); } }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        @media (max-width: 768px) { .hero h1 { font-size: 40px; } .hero { padding: 60px 20px; } header { padding: 15px 20px; } .section { padding: 40px 20px; } }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Qarzhy Bilim</div>
+</header>
+
+<section class="hero">
+    <h1>Қаржылық Сауаттылық: Тұрақты Болашақты Қалыптастыру</h1>
+    <p>
+        **"Qarzhy Bilim"** — Қазақстандағы халықтың қаржылық сауаттылығын арттыруға бағытталған инновациялық онлайн-платформа. Біз жеке қаржыларды тиімді басқаруға, бюджет құруға және **саналы экономикалық шешімдер** қабылдауға қажетті практикалық білім мен дағдыларды береміз.
+    </p>
+
+    <div class="hero-visual">
+        <i class="fas fa-hand-holding-usd" style="font-size: 100px; color: white;"></i> 
+        <div class="scroll-down-arrow">
+             <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🎯 Негізгі Бағыттар және Шешімдер</h2>
+    <div class="cards">
+        
+        <div class="card">
+            <i class="fas fa-chart-pie card-icon"></i> <h3>Жеке және Отбасылық Бюджет</h3>
+            <p>
+                Бюджет пен инвестицияларды жоспарлау мәдениетінің әлсіздігін шешу. Кірістер мен шығыстарды тиімді басқару әдістемесін, 50/30/20 ережесін және қаржылық тәртіп қалыптастыру жолдарын үйрету.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-lightbulb card-icon"></i> <h3>Қаржылық Ағарту</h3>
+            <p>
+                Жастар мен ересектер арасында қаржылық білімнің жеткіліксіздігі мәселесін шешу. Активтер, пассивтер, капитал, инфляция және пайыздық ставкалар сияқты кәсіптік терминдерді түсінікті тілмен анықтау.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-cogs card-icon"></i> <h3>Инвестициялық Дағдыларды Дамыту</h3>
+            <p>
+                Инвестициялық белсенділікті арттыруға бағытталған ақпарат. Қарапайым инвестиция түрлерінен бастап, тәуекелдерді басқаруға дейінгі практикалық білімдерді интерактивті түрде ұсыну.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-shield-alt card-icon"></i> <h3>Қаржылық Қауіпсіздік және Алаяқтық</h3>
+            <p>
+                Қаржылық алаяқтық пен артық несие алу қаупін азайту. Қарыздардан аулақ болу, төтенше жағдай қорын құру және киберқауіпсіздік ережелерін үйрету арқылы қауіпсіздікті қамтамасыз ету.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-desktop card-icon"></i> <h3>Онлайн-Оқыту және Геймификация</h3>
+            <p>
+                Қазақ тіліндегі сапалы контент шектеулігі мәселесін шешу. Бейнесабақтар, тесттер, инфографика және жасөспірімдерге арналған **геймификацияланған** оқыту жүйесін енгізу.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-handshake card-icon"></i> <h3>Қоғамдық және Экономикалық Әсер</h3>
+            <p>
+                Экономикалық жауапты қоғам қалыптастыруға бағытталған. Қаржылық институттарға сенімді арттыру және жеке отбасылардың өмір сапасын жақсартуға үлес қосу.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 Qarzhy Bilim — Қаржылық білім бәріне қолжетімді. Платформа экономикалық жауапты қоғам құруға бағытталған.
+</footer>
+
+</body>
+</html>
